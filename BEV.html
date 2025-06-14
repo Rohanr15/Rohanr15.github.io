@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Electric Vehicle Projects - Rohan Rao</title>
+  <title>Battery Pack Design for a BEV - Rohan Rao</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
@@ -19,28 +19,46 @@
     <div id="main">
       <section class="post">
         <header class="major">
-          <h1>Electric Vehicle Projects</h1>
-          <p>Selected projects related to hybrid systems, battery design and vehicle modelling.</p>
+          <h1>Battery Pack Specification for a BEV</h1>
+          <p>Designing an optimised battery pack to meet performance and range targets for electric vehicles.</p>
         </header>
 
-        <!-- Project 1 -->
-        <h2>Hybrid Vehicle Modelling and Analysis</h2>
-        <p><strong>Objective:</strong> Optimise total energy consumption (fuel + battery) for a power-split hybrid vehicle architecture.</p>
-        <p><strong>Procedure:</strong> Used the ELVIO Simulink toolbox to simulate drive cycles and implemented a start-stop control strategy. Engine starts were minimised based on battery SOC and speed thresholds.</p>
-        <p><strong>Results:</strong> Battery energy consumption decreased by 48%, fuel consumption dropped by 2.1%, and engine starts reduced from 61 to 9.</p>
+        <!-- Objective -->
+        <h2>Objective</h2>
+        <p>To develop a battery pack specification capable of:</p>
+        <ul>
+          <li>Providing a 300-mile range at 65 mph cruising speed</li>
+          <li>Delivering 150 kW peak power output for at least 20 seconds</li>
+          <li>Balancing energy, performance, and total pack weight</li>
+        </ul>
 
-        <!-- Project 2 -->
-        <h2>Battery Pack Specification for a BEV</h2>
-        <p><strong>Objective:</strong> Design a battery pack for a 300-mile range BEV that could also deliver 150 kW peak power for at least 20 seconds.</p>
-        <p><strong>Procedure:</strong> Compared two cell types using real experimental data. Performed calculations for capacity, power output, and total weight.</p>
-        <p><strong>Results:</strong> Selected Cell A for lower pack weight (53.8 kg lighter) while still meeting all performance criteria. Gained deep insight into EV powertrain design trade-offs.</p>
+        <!-- Procedure -->
+        <h2>Procedure</h2>
+        <ul>
+          <li>Compared two different Li-ion cell types using experimental data</li>
+          <li>Calculated required pack size based on energy and power demands</li>
+          <li>Estimated weight, capacity, and configuration for each candidate</li>
+          <li>Selected the most efficient solution while meeting all constraints</li>
+        </ul>
 
-        <!-- Project 3 -->
-        <h2>Vehicle Modelling – Coastdown Test</h2>
-        <p><strong>Objective:</strong> Use a vehicle simulation model to predict coastdown behaviour using real test data.</p>
-        <p><strong>Procedure:</strong> Tuning of aerodynamic and rolling resistance coefficients in Simulink using parameter estimation tools. Real test conducted on MIRA track using a Ford Focus ST.</p>
-        <p><strong>Results:</strong> Reduced root-mean-square error (RMSE) for wheel speed by 59%. Improved understanding of integrating experimental and model-based approaches.</p>
+        <!-- Results -->
+        <h2>Results</h2>
+        <ul>
+          <li>Cell A was selected, resulting in a pack 53.8 kg lighter than with Cell B</li>
+          <li>All required energy and performance targets were met</li>
+          <li>Offered deeper insight into battery design, energy density, and pack integration trade-offs</li>
+        </ul>
 
+        <!-- Visual Placeholder -->
+        <h2>Battery Design Concept (Illustration)</h2>
+        <span class="image fit"><img src="images/battery-pack.png" alt="Battery Design Diagram" /></span>
+
+        <!-- Takeaways -->
+        <h2>Key Takeaways</h2>
+        <p>This project deepened my understanding of EV battery system design, including the relationship between cell chemistry, energy requirements, and vehicle performance. It highlighted the role of engineering trade-offs and system-level thinking in electric powertrain design.</p>
+
+        <!-- Back Link -->
+        <p><a href="index.html" class="button">&#8592; Back to Main Page</a></p>
       </section>
     </div>
 
