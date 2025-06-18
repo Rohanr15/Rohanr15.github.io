@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Battery Pack Design for a BEV - Rohan Rao</title>
+  <title>Hybrid Vehicle Modelling - Rohan Rao</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
@@ -19,46 +19,37 @@
     <div id="main">
       <section class="post">
         <header class="major">
-          <h1>Battery Pack Specification for a BEV</h1>
-          <p>Designing an optimised battery pack to meet performance and range targets for electric vehicles.</p>
+          <h1>Hybrid Vehicle Modelling and Analysis</h1>
+          <p>Model-based energy optimisation for a power-split hybrid architecture</p>
         </header>
 
         <!-- Objective -->
         <h2>Objective</h2>
-        <p>To develop a battery pack specification capable of:</p>
-        <ul>
-          <li>Providing a 300-mile range at 65 mph cruising speed</li>
-          <li>Delivering 150 kW peak power output for at least 20 seconds</li>
-          <li>Balancing energy, performance, and total pack weight</li>
-        </ul>
+        <p>To optimise total energy consumption (fuel and battery) for a vehicle using a power-split hybrid drivetrain, while reducing emissions and preserving drivability.</p>
 
         <!-- Procedure -->
-        <h2>Procedure</h2>
+        <h2>Tools & Approach</h2>
         <ul>
-          <li>Compared two different Li-ion cell types using experimental data</li>
-          <li>Calculated required pack size based on energy and power demands</li>
-          <li>Estimated weight, capacity, and configuration for each candidate</li>
-          <li>Selected the most efficient solution while meeting all constraints</li>
+          <li>Used the <strong>ELVIO Simulink toolbox</strong> to simulate the hybrid powertrain.</li>
+          <li>Implemented a <strong>start-stop control strategy</strong> triggered by battery SOC and vehicle speed.</li>
+          <li>Adjusted operational speed and torque setpoints using the <strong>Simulink Response Optimiser</strong>.</li>
         </ul>
 
-<!-- Voltage Curves Image -->
-https://github.com/Rohanr15/Rohanr15.github.io/blob/main/images/Voltage%20Curves.jpg
-        <h2>Voltage Curves Comparison</h2>
-  <img src="images/Voltage Curves.jpg" alt="Voltage curves for Battery Cells" />
-</span>
-        
         <!-- Results -->
         <h2>Results</h2>
         <ul>
-          <li>Cell A was selected, resulting in a pack 53.8 kg lighter than with Cell B</li>
-          <li>All required energy and performance targets were met</li>
-          <li>Offered deeper insight into battery design, energy density, and pack integration trade-offs</li>
+          <li><strong>Battery energy consumption</strong> reduced by 48%</li>
+          <li><strong>Fuel energy usage</strong> dropped by 2.1%</li>
+          <li><strong>Engine starts reduced</strong> from 61 to 9</li>
         </ul>
 
+        <!-- Simulation Diagram -->
+        <h2>Simulation Diagram</h2>
+        <span class="image fit"><img src="images/hybrid-sim.png" alt="Hybrid Vehicle Simulation Diagram" /></span>
 
         <!-- Takeaways -->
         <h2>Key Takeaways</h2>
-        <p>This project deepened my understanding of EV battery system design, including the relationship between cell chemistry, energy requirements, and vehicle performance. It highlighted the role of engineering trade-offs and system-level thinking in electric powertrain design.</p>
+        <p>This project strengthened my understanding of hybrid energy flow, supervisory control strategies, and multi-objective optimisation using MATLAB/Simulink.</p>
 
         <!-- Back Link -->
         <p><a href="index.html" class="button">&#8592; Back to Main Page</a></p>
@@ -106,4 +97,3 @@ https://github.com/Rohanr15/Rohanr15.github.io/blob/main/images/Voltage%20Curves
   <script src="assets/js/main.js"></script>
 </body>
 </html>
-
