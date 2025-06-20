@@ -1,1 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Vehicle Modelling – Coastdown Test</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+  <div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+      <a href="index.html" class="logo">Back to Portfolio</a>
+    </header>
+
+    <!-- Main -->
+    <div id="main" class="inner">
+      <header>
+        <h1>Vehicle Modelling – Coastdown Test</h1>
+        <p>Integrating experimental coastdown test data with a Simulink model for performance prediction and parameter estimation.</p>
+      </header>
+
+      <span class="image main"><img src="images/vehicle_model.jpg" alt="Simulink vehicle model (placeholder)" /></span>
+
+      <h2>Objective</h2>
+      <p>To obtain real-world experience of straight-line vehicle performance and use a simulation model to replicate a coastdown test. The aim was to estimate vehicle drag and rolling resistance parameters by minimising the error between measured and simulated wheel speeds.</p>
+
+      <h2>Test Procedure</h2>
+      <p>The coastdown test was conducted on the HORIBA MIRA test track using a 2015 Ford Focus ST. The car was accelerated to a target speed, the clutch was disengaged, and it was allowed to coast to a stop. Data was recorded at two speeds (70 mph and 50 mph) and in both directions to average out wind effects.</p>
+      <ul>
+        <li>Data included accelerator/clutch pedal positions, air temperature, and gear indication.</li>
+        <li>Multiple runs were conducted for statistical accuracy.</li>
+      </ul>
+
+      <h2>Modelling Procedure</h2>
+      <p>
+        A vehicle simulation model was developed in Simulink. The <strong>Simulink Parameter Estimation</strong> tool was used to tune key coefficients:
+      </p>
+      <ul>
+        <li>Aerodynamic drag coefficient (Cd)</li>
+        <li>Rolling resistance (velocity-dependent and constant terms)</li>
+      </ul>
+      <p>The tool defined an objective function to minimise the root-mean-squared error (RMSE) between simulated and measured wheel speeds.</p>
+
+      <h2>Results</h2>
+      <ul>
+        <li>Model RMSE reduced by <strong>59%</strong>, indicating strong agreement with real-world data.</li>
+        <li>Gained experience in integrating physical testing with simulation.</li>
+        <li>Collaborated in a team to capture and process test data using ATI Vision software.</li>
+      </ul>
+
+      <h2>Skills Applied</h2>
+      <ul>
+        <li>Simulink & Model-Based Design</li>
+        <li>Parameter estimation and optimisation</li>
+        <li>Experimental data interpretation</li>
+        <li>Team-based testing and validation</li>
+      </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <section class="split contact">
+        <section class="alt">
+          <h3>Address</h3>
+          <p>85 Widdrington Road<br />Coventry, West Midlands</p>
+        </section>
+        <section>
+          <h3>Phone</h3>
+          <p><a href="#">(+44) 07771120101 / +91 7349261625</a></p>
+        </section>
+        <section>
+          <h3>Email</h3>
+          <p><a href="mailto:rohanrao1050@gmail.com">rohanrao1050@gmail.com</a></p>
+        </section>
+        <section>
+          <h3>Social</h3>
+          <ul class="icons alt">
+            <li><a href="https://www.linkedin.com/in/rohan-rao-1504/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+            <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+          </ul>
+        </section>
+      </section>
+    </footer>
+
+    <div id="copyright">
+      <ul><li>&copy; Rohan Rao</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
 
