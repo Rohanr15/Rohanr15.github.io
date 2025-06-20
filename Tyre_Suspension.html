@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Tyre Modelling and Suspension Tuning</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+  <div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+      <a href="index.html" class="logo">Back to Portfolio</a>
+    </header>
+
+    <!-- Main -->
+    <div id="main" class="inner">
+      <header>
+        <h1>Tyre Modelling and Suspension Tuning</h1>
+        <p>Developing a lateral brush tyre model and tuning suspension geometry to mitigate understeer in high lateral acceleration scenarios.</p>
+      </header>
+
+      <span class="image main"><img src="images/tyre_suspension.jpg" alt="Tyre model and suspension setup" /></span>
+
+      <h2>Objective</h2>
+      <p>
+        Part 1: Develop a tyre model to predict cornering force as a function of lateral slip using a brush model approach.<br>
+        Part 2: Optimise suspension geometry to reduce understeer at 1g lateral acceleration by balancing camber angle and toe.
+      </p>
+
+      <h2>Part 1 – Tyre Modelling</h2>
+      <ul>
+        <li>Constructed a lateral brush model using an exponential decay friction approach.</li>
+        <li>Model parameters were tuned to match experimental cornering force curves.</li>
+        <li>Implemented in MATLAB for iterative simulation and validation.</li>
+      </ul>
+      <p>The resulting model accurately captured tyre behaviour beyond the critical slip point and was shown to be adaptable to varying normal loads.</p>
+
+      <h2>Part 2 – Suspension Geometry Optimisation</h2>
+      <ul>
+        <li>MATLAB used to automate optimisation of suspension pickup points using <code>fminsearch</code>.</li>
+        <li>Objective function minimised understeer while preserving acceptable camber/toe characteristics.</li>
+        <li>Geometry changes visualised using plots and simulation feedback loops.</li>
+      </ul>
+      <p>The optimisation process improved cornering balance and reduced the need for manual suspension tuning.</p>
+
+      <h2>Skills Applied</h2>
+      <ul>
+        <li>Vehicle dynamics and tyre modelling</li>
+        <li>MATLAB scripting and optimisation techniques</li>
+        <li>Data validation against experimental results</li>
+        <li>Problem-solving for dynamic handling performance</li>
+      </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <section class="split contact">
+        <section class="alt">
+          <h3>Address</h3>
+          <p>85 Widdrington Road<br />Coventry, West Midlands</p>
+        </section>
+        <section>
+          <h3>Phone</h3>
+          <p><a href="#">(+44) 07771120101 / +91 7349261625</a></p>
+        </section>
+        <section>
+          <h3>Email</h3>
+          <p><a href="mailto:rohanrao1050@gmail.com">rohanrao1050@gmail.com</a></p>
+        </section>
+        <section>
+          <h3>Social</h3>
+          <ul class="icons alt">
+            <li><a href="https://www.linkedin.com/in/rohan-rao-1504/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+            <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+          </ul>
+        </section>
+      </section>
+    </footer>
+
+    <div id="copyright">
+      <ul><li>&copy; Rohan Rao</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
