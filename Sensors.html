@@ -1,1 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Assessment of Vehicle Sensors</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+  <div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+      <a href="index.html" class="logo">Back to Portfolio</a>
+    </header>
+
+    <!-- Main -->
+    <div id="main" class="inner">
+      <header>
+        <h1>Assessment of Vehicle Sensors</h1>
+        <p>Comparing onboard vehicle sensors with high-precision GPS/IMU equipment for dynamic performance analysis.</p>
+      </header>
+
+      <span class="image main"><img src="images/sensors_test.jpg" alt="Vehicle sensors assessment" /></span>
+
+      <h2>Objective</h2>
+      <p>To evaluate the accuracy of CANBUS sensor data from a test vehicle against specialised measurement systems such as the OXTS RT3000, particularly for dynamic quantities like yaw rate and lateral acceleration.</p>
+
+      <h2>Test Setup</h2>
+      <ul>
+        <li>Test conducted on MIRA proving ground using a fully instrumented vehicle.</li>
+        <li>Measurements included yaw rate, lateral and longitudinal acceleration, GPS position, and velocity.</li>
+        <li>Sensors: Vehicle’s native CANBUS vs. OXTS RT3000 (high-grade GPS/IMU).</li>
+      </ul>
+
+      <h2>Procedure</h2>
+      <p>
+        Data from both sources was synchronised and compared. MATLAB was used for data processing and integration:
+      </p>
+      <ul>
+        <li>Yaw rate and lateral acceleration were integrated to derive yaw angle and lateral velocity.</li>
+        <li>GPS data was processed using the Haversine formula to recreate the vehicle path on the test track.</li>
+      </ul>
+
+      <h2>Results</h2>
+      <ul>
+        <li>Vehicle sensors accurately tracked yaw rate and lateral acceleration within minor tolerances.</li>
+        <li>GPS-based reconstruction of the vehicle path aligned closely with expected trajectories.</li>
+        <li>Revealed the importance of sensor fusion for autonomous driving applications.</li>
+      </ul>
+
+      <h2>Skills Applied</h2>
+      <ul>
+        <li>Data acquisition and synchronisation</li>
+        <li>MATLAB data analysis and integration techniques</li>
+        <li>GPS and IMU-based motion tracking</li>
+        <li>Understanding of vehicle dynamics and sensor accuracy</li>
+      </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <section class="split contact">
+        <section class="alt">
+          <h3>Address</h3>
+          <p>85 Widdrington Road<br />Coventry, West Midlands</p>
+        </section>
+        <section>
+          <h3>Phone</h3>
+          <p><a href="#">(+44) 07771120101 / +91 7349261625</a></p>
+        </section>
+        <section>
+          <h3>Email</h3>
+          <p><a href="mailto:rohanrao1050@gmail.com">rohanrao1050@gmail.com</a></p>
+        </section>
+        <section>
+          <h3>Social</h3>
+          <ul class="icons alt">
+            <li><a href="https://www.linkedin.com/in/rohan-rao-1504/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+            <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+          </ul>
+        </section>
+      </section>
+    </footer>
+
+    <div id="copyright">
+      <ul><li>&copy; Rohan Rao</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
 
