@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Energy Absorbers for Crashworthiness</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+  <div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+      <a href="index.html" class="logo">Back to Portfolio</a>
+    </header>
+
+    <!-- Main -->
+    <div id="main" class="inner">
+      <header>
+        <h1>Energy Absorbers for Crashworthiness</h1>
+        <p>Finite element simulation of a frontal impact to evaluate the crash performance of a vehicle’s structural energy absorber.</p>
+      </header>
+
+      <span class="image main"><img src="images/crashworthiness.jpg" alt="Crash simulation of energy absorber" /></span>
+
+      <h2>Objective</h2>
+      <p>
+        To predict the deceleration-time (crash pulse) response of a vehicle energy absorber (front longitudinal steel tube) during a frontal impact
+        at 60 km/h into a rigid wall. The aim was to ensure passenger safety by maintaining low deceleration levels.
+      </p>
+
+      <h2>Simulation Setup</h2>
+      <ul>
+        <li>Software used: <strong>MSC Marc</strong> – a nonlinear FEA solver for crash and contact problems.</li>
+        <li>Model: Rectangular steel tube representing front longitudinal member of a SMART Fortwo.</li>
+        <li>Boundary Conditions: Tube pushed against a fixed wall using equivalent vehicle mass.</li>
+        <li>Material: Mild steel with defined yield strength, plasticity, and strain-rate effects.</li>
+      </ul>
+
+      <h2>Procedure</h2>
+      <p>
+        The simulation was set up as a dynamic transient analysis. Contact algorithms were defined between the tube and the rigid wall.
+        The model was meshed using solid elements, and simulation time steps were chosen to ensure numerical stability.
+      </p>
+
+      <h2>Results</h2>
+      <ul>
+        <li>Vehicle speed successfully reduced from 60 km/h to zero over a short time duration.</li>
+        <li>Crash pulse (deceleration vs. time) stayed within injury-prevention thresholds.</li>
+        <li>Crushing force vs. displacement graph showed energy absorption trend matching physical test results.</li>
+        <li>Fully crushed shape matched expectations from published research.</li>
+      </ul>
+
+      <h2>Skills Applied</h2>
+      <ul>
+        <li>Nonlinear finite element modelling</li>
+        <li>Crash simulation using MSC Marc</li>
+        <li>Understanding of energy absorption principles and deceleration safety</li>
+        <li>Structural mechanics and dynamic impact analysis</li>
+      </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <section class="split contact">
+        <section class="alt">
+          <h3>Address</h3>
+          <p>85 Widdrington Road<br />Coventry, West Midlands</p>
+        </section>
+        <section>
+          <h3>Phone</h3>
+          <p><a href="#">(+44) 07771120101 / +91 7349261625</a></p>
+        </section>
+        <section>
+          <h3>Email</h3>
+          <p><a href="mailto:rohanrao1050@gmail.com">rohanrao1050@gmail.com</a></p>
+        </section>
+        <section>
+          <h3>Social</h3>
+          <ul class="icons alt">
+            <li><a href="https://www.linkedin.com/in/rohan-rao-1504/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+            <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+          </ul>
+        </section>
+      </section>
+    </footer>
+
+    <div id="copyright">
+      <ul><li>&copy; Rohan Rao</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
