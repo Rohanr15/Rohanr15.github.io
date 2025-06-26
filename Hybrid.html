@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Hybrid Vehicle Modelling - Rohan Rao</title>
+  <title>Hybrid Energy Optimisation – Power-Split HEV</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
@@ -19,37 +19,42 @@
     <div id="main">
       <section class="post">
         <header class="major">
-          <h1>Hybrid Vehicle Modelling and Analysis</h1>
-          <p>Model-based energy optimisation for a power-split hybrid architecture</p>
+          <h1>Hybrid Energy Optimisation – Power-Split HEV</h1>
+          <p>Improving energy efficiency of a hybrid electric vehicle on the WLTP cycle using advanced control strategies.</p>
         </header>
+
+        <!-- Context -->
+        <h2>Context</h2>
+        <p>Hybrid vehicles, such as the Toyota Prius, use a power-split device to balance power between an internal combustion engine and two electric motors. This project focused on optimising energy usage in a simulated hybrid vehicle while maintaining driveability under the WLTP cycle.</p>
 
         <!-- Objective -->
         <h2>Objective</h2>
-        <p>To optimise total energy consumption (fuel and battery) for a vehicle using a power-split hybrid drivetrain, while reducing emissions and preserving drivability.</p>
+        <p>To reduce overall energy consumption and emissions in a power-split HEV model by modifying engine start-stop control and adjusting engine operating regions.</p>
 
-        <!-- Procedure -->
-        <h2>Tools & Approach</h2>
+        <!-- Methodology -->
+        <h2>Methodology</h2>
         <ul>
-          <li>Used the <strong>ELVIO Simulink toolbox</strong> to simulate the hybrid powertrain.</li>
-          <li>Implemented a <strong>start-stop control strategy</strong> triggered by battery SOC and vehicle speed.</li>
-          <li>Adjusted operational speed and torque setpoints using the <strong>Simulink Response Optimiser</strong>.</li>
+          <li>Designed a composite start-stop control logic based on battery state-of-charge (SOC) and vehicle speed.</li>
+          <li>Increased minimum torque and engine speed thresholds to avoid low-efficiency operating zones.</li>
+          <li>Simulated drive cycles in Simulink using a backward-forward energy flow model.</li>
+          <li>Attempted optimisation using Simulink's Response Optimiser (manual tuning yielded better results).</li>
         </ul>
 
         <!-- Results -->
         <h2>Results</h2>
         <ul>
-          <li><strong>Battery energy consumption</strong> reduced by 48%</li>
-          <li><strong>Fuel energy usage</strong> dropped by 2.1%</li>
-          <li><strong>Engine starts reduced</strong> from 61 to 9</li>
+          <li><strong>Engine starts reduced</strong>: 61 → 9 (↓ 85%)</li>
+          <li><strong>Fuel energy usage</strong>: 22.2 MJ → 21.74 MJ (↓ 2.1%)</li>
+          <li><strong>Battery energy usage</strong>: 0.326 kWh → 0.167 kWh (↓ 48.6%)</li>
         </ul>
 
-        <!-- Simulation Diagram -->
-        <h2>Simulation Diagram</h2>
-        <span class="image fit"><img src="images/hybrid-sim.png" alt="Hybrid Vehicle Simulation Diagram" /></span>
+        <!-- Insights -->
+        <h2>Insights</h2>
+        <p>This project deepened my understanding of hybrid control strategies, SOC-dependent logic, and trade-offs between energy sources. It also highlighted the importance of setting cost functions when using automatic tuning tools.</p>
 
-        <!-- Takeaways -->
-        <h2>Key Takeaways</h2>
-        <p>This project strengthened my understanding of hybrid energy flow, supervisory control strategies, and multi-objective optimisation using MATLAB/Simulink.</p>
+        <!-- Placeholder Image -->
+        <h2>Figures</h2>
+        <span class="image fit"><img src="images/hybrid-sim.png" alt="Hybrid simulation overview" /></span>
 
         <!-- Back Link -->
         <p><a href="index.html" class="button">&#8592; Back to Main Page</a></p>
@@ -84,7 +89,6 @@
     <div id="copyright">
       <ul><li>&copy; Rohan Rao</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
     </div>
-
   </div>
 
   <!-- Scripts -->
@@ -97,3 +101,4 @@
   <script src="assets/js/main.js"></script>
 </body>
 </html>
+
